@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Classifier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Iris Flora Classifier</h1>
+            <p>Enter the flower dimensions to identify the species.</p>
+        </header>
+
+        <main>
+            <form id="predictionForm" class="prediction-form">
+                <div class="input-group">
+                    <label for="sepal_length">Sepal Length (cm)</label>
+                    <input type="number" id="sepal_length" name="sepal_length" step="0.1" value="5.1" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="sepal_width">Sepal Width (cm)</label>
+                    <input type="number" id="sepal_width" name="sepal_width" step="0.1" value="3.5" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="petal_length">Petal Length (cm)</label>
+                    <input type="number" id="petal_length" name="petal_length" step="0.1" value="1.4" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="petal_width">Petal Width (cm)</label>
+                    <input type="number" id="petal_width" name="petal_width" step="0.1" value="0.2" required>
+                </div>
+
+                <button type="submit" id="predictBtn">
+                    <span class="btn-text">Classify Flower</span>
+                    <div class="loader"></div>
+                </button>
+            </form>
+
+            <div id="resultCard" class="result-card hidden">
+                <h2>Result</h2>
+                <div class="prediction-display">
+                    <span id="predictionResult">...</span>
+                </div>
+                <button id="resetBtn" class="reset-btn">Analyze Another</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
