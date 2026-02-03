@@ -34,6 +34,12 @@ python scripts/ml_project_lifecycle.py
 
 This script demonstrates the lifecycle of a Machine Learning project, including initializing an MLflow experiment, logging parameters, metrics, and models, and tracking experiments using modular coding practices.
 
+
+## Live Demo
+Check out the live deployment here: [Iris Flora Classifier Demo](https://ganateja19.github.io/iris-classifier-ui/)
+
+![Iris Classifier UI](screenshot.png)
+
 ## Further Reading
 
 For more information on MLflow and its capabilities, refer to the [MLflow documentation](https://www.mlflow.org/docs/latest/index.html).
